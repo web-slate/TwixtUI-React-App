@@ -45,11 +45,7 @@ module.exports = {
         "src",
         "components"
       ),
-      "TwixtUI": path.resolve(
-        __dirname,
-        "src",
-        "TwixtUI"
-      ),
+      'TwixtUI': path.resolve(__dirname, 'src/TwixtUI'),
       "@tw/examples": path.resolve(
         __dirname,
         "src",
