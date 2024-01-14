@@ -63,7 +63,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, "src/static/index.html"),
-      APP_ROOT_ID: 'React App - React UI',
+      APP_ROOT_ID: 'twixt',
+      APP_TITLE: 'React App - Twixt UI',
       APP_VERSION: PACKAGE.version
     }),
 
