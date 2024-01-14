@@ -63,7 +63,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, "src/static/index.html"),
-      APP_ROOT_ID: 'tw',
+      APP_ROOT_ID: 'React App - React UI',
       APP_VERSION: PACKAGE.version
     }),
 
