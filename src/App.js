@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <ErrorHandler>
-        <ToolName name="tool" />
+        <ToolName name="Dash" />
         <h1>Light React App with TwixtUI</h1>
         <div>
           <UserNameInput />
