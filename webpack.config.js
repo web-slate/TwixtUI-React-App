@@ -45,6 +45,11 @@ module.exports = {
         "src",
         "components"
       ),
+      "@tw/examples": path.resolve(
+        __dirname,
+        "src",
+        "examples"
+      ),
     },
   },
   output: {
