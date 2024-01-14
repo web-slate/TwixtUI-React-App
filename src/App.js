@@ -1,5 +1,5 @@
-import React from 'react'
-import InputSingleLine from '../TwixtUI/react/InputSingleLine'
+import React, { useState } from 'react'
+import { InputSingleLine } from './TwixtUI/react'
 
 // Components.
 import { ErrorHandler } from '@tw/components'
@@ -21,7 +21,7 @@ function App() {
         <h1>Light React App with TwixtUI</h1>
         <div>
           <InputSingleLine
-            label="Field Name"
+            label="User Name"
             value={value}
             onChange={handleChange}
             onBlur={handleBlur}
