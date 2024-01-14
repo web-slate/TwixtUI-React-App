@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToolName } from './TwixtUI/react'
+import { ToolName } from 'TwixtUI/react'
 
 // Components.
 import { ErrorHandler } from '@tw/components'
