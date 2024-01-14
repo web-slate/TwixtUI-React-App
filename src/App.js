@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <ErrorHandler>
-        <h1>Welcome to React Chef Slim App</h1>
+        <h1>Light React App with TwixtUI</h1>
       </ErrorHandler>
     </>
   )
