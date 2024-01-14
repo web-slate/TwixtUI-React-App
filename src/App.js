@@ -1,33 +1,18 @@
-import React, { useState } from 'react'
-import { InputSingleLine } from './TwixtUI/react'
+import React from 'react'
+import { ToolName } from './TwixtUI/react'
 
 // Components.
 import { ErrorHandler } from '@tw/components'
+import UserNameInput from '@tw/examples/UserNameInput'
 
 function App() {
-  const [value, setValue] = useState('');
-
-  const handleChange = (e) => {
-      setValue(e.target.value);
-  };
-
-  const handleBlur = () => {
-      console.log('Input field lost focus');
-  };
-
   return (
     <>
       <ErrorHandler>
+        <ToolName name="tool" />
         <h1>Light React App with TwixtUI</h1>
         <div>
-          <InputSingleLine
-            label="User Name"
-            value={value}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            error={value === '' ? 'Field cannot be empty' : ''}
-            warning={value.length > 0 && value.length < 5 ? 'Text is too short' : ''}
-          />
+          <UserNameInput />
         </div>
       </ErrorHandler>
     </>
