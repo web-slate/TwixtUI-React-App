@@ -13,7 +13,8 @@
     "clear-ui": "rm -rf TwixtUI && rm -f .gitmodules",
     "clear-cache-ui": "git rm --cached TwixtUI -f || true && rm -rf .git/modules/TwixtUI || true",
     "commit-clear": "git add . && git commit -am \"tech(ui): remove TwixtUI submodule\"",
-    "ui": "npm run clear-ui && npm run clear-cache-ui && npm run commit-clear && npm run get-ui"
+    "ui": "npm run clear-ui && npm run clear-cache-ui && npm run commit-clear && npm run get-ui",
+    "update-ui": "git submodule update --init"
   },
   "keywords": [],
   "author": "",
