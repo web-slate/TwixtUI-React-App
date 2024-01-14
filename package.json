@@ -9,10 +9,11 @@
     "clean": "rm -rf node_modules",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
-    "get-ui": "git submodule add https://github.com/web-slate/TwixtUI.git",
+    "get-ui": "cd src && git submodule add https://github.com/web-slate/TwixtUI.git",
     "clear-ui": "rm -rf TwixtUI && rm -f .gitmodules",
     "clear-cache-ui": "git rm --cached TwixtUI -f && rm -rf .git/modules/TwixtUI",
-    "commit-clear": "git commit -am \"tech(ui): remove TwixtUI submodule\""
+    "commit-clear": "git add . && git commit -am \"tech(ui): remove TwixtUI submodule\"",
+    "ui": "npm run clear-ui && npm run clear-cache-ui && npm run commit-clear"
   },
   "keywords": [],
   "author": "",
