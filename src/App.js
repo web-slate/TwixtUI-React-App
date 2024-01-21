@@ -6,6 +6,7 @@ import UserNameInput from '@tw/examples/UserNameInput'
 import Header from '@tw/examples/Header'
 import Modal from '@tw/examples/Modal'
 import TwixSwitch from '@tw/examples/Switch'
+import TwixtTextArea from '@tw/examples/TextArea'
 import { LeftSideBar, RightSideBar, ContentPane } from '@tw/examples/Skeleton'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <button onClick={() => setOpen(true)} className="px-4 py-2 bg-indigo-500 text-white rounded-md">
                   Open Modal
                 </button>
+                <TwixtTextArea />
               </ContentPane>
               <RightSideBar />
             </div>
