@@ -38,11 +38,13 @@ function TwixModal({ title = '', children, footer }) {
   );
 }
 
-export default function Modal() {
+export default function Modal({ onSubmit = () => { } }) {
   return (
     <TwixModal title="Modal Title"
       footer={(
-        <button onClick={() => setOpen(false)} className="px-3 py-1 bg-indigo-500 text-white rounded-md w-full sm:w-auto">
+        <button onClick={() => {
+          onSubmit();
+        }} className="px-3 py-1 bg-indigo-500 text-white rounded-md w-full sm:w-auto">
           Accept
         </button>
       )}
