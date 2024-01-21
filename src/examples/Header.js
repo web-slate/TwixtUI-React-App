@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ToolName } from 'TwixtUI/react'
 
-function TwixHeader({ children }) {
+function TwixtHeader({ children }) {
   return (
     <header className="flex justify-between items-center bg-blue-300 p-4">
       <div className="flex">
@@ -21,8 +21,8 @@ function TwixHeader({ children }) {
 
 export default function Header() {
   return (
-    <TwixHeader>
-      <ToolName name="Twix UI React App" />
-    </TwixHeader>
+    <TwixtHeader>
+      <ToolName name="Twixt UI React App" />
+    </TwixtHeader>
   );
 }
