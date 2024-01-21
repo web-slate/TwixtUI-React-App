@@ -7,7 +7,7 @@ function TwixModal({ title = '', children, footer }) {
         {/* Modal Overlay */}
         <div className="fixed inset-0 px-2 z-10 overflow-hidden flex items-center justify-center">
           <div
-            className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            className="absolute inset-0 bg-gray-500 bg-opacity-20 transition-opacity"
             style={{ transition: 'opacity 300ms ease-out' }}
           ></div>
 
