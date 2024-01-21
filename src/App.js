@@ -5,6 +5,7 @@ import { ErrorHandler } from '@tw/components'
 import UserNameInput from '@tw/examples/UserNameInput'
 import Header from '@tw/examples/Header'
 import Modal from '@tw/examples/Modal'
+import TwixSwitch from '@tw/examples/Switch'
 import { LeftSideBar, RightSideBar, ContentPane } from '@tw/examples/Skeleton'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <div className="flex h-full">
               <LeftSideBar />
               <ContentPane>
+                <TwixSwitch />
                 <UserNameInput />
                 {/* Open modal button */}
                 <button onClick={() => setOpen(true)} className="px-4 py-2 bg-indigo-500 text-white rounded-md">
