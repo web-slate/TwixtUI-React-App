@@ -8,6 +8,8 @@ import Modal from '@tw/examples/Modal'
 import TwixSwitch from '@tw/examples/Switch'
 import TwixtTextArea from '@tw/examples/TextArea'
 import TwixtSampleTable from '@tw/examples/SampleTable'
+import CommentsSystem from '@tw/examples/CommentsSystem'
+
 import { LeftSideBar, RightSideBar, ContentPane } from '@tw/examples/Skeleton'
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
                 </button>
                 <TwixtTextArea />
                 <TwixtSampleTable />
+                <CommentsSystem />
               </ContentPane>
               <RightSideBar />
             </div>
