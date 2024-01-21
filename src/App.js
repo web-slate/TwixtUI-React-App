@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <ErrorHandler>
-        {isOpen && <Modal />}
+        {isOpen && <Modal onSubmit={() => setOpen(false)} />}
         <div className="flex h-screen bg-green-300">
           <div className="flex-1 flex flex-col overflow-hidden">
             <Header />
