@@ -4,7 +4,6 @@ const fruits = [
   { id: 1, name: 'Apple', category: 'Urgent', dueDate: '04/07', status: 'Due Today at 18:00' },
   { id: 2, name: 'Banana', category: 'Normal', dueDate: '05/07', status: 'Due Tomorrow' },
   { id: 3, name: 'Cherry', category: 'Low', dueDate: '06/07', status: 'Due in 3 days' },
-  // Add more fruits as needed
 ];
 
 const TaskHeader = () => {
