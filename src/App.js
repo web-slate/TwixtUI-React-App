@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { ErrorHandler } from '@tw/components'
 import UserNameInput from '@tw/examples/UserNameInput'
 import Header from '@tw/examples/Header'
+import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import TwixSwitch from '@tw/examples/Switch'
 import TwixtTextArea from '@tw/examples/TextArea'
@@ -22,6 +23,7 @@ function App() {
         <div className="flex h-screen bg-green-300">
           <div className="flex-1 flex flex-col overflow-hidden">
             <Header />
+            <Heading />
             <div className="flex h-full">
               <LeftSideBar />
               <ContentPane>
