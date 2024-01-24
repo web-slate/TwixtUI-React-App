@@ -28,6 +28,7 @@ function App() {
             <div className="flex h-full">
               <LeftSideBar />
               <ContentPane>
+              <LoadingPostCard />
                 <Heading />
                 <TwixSwitch />
                 <UserNameInput />
@@ -37,7 +38,6 @@ function App() {
                 </TwixtButton>
                 <TwixtTextArea />
                 <TwixtSimpleTable />
-                <LoadingPostCard />
                 <CommentsSystem />
               </ContentPane>
               <RightSideBar />
