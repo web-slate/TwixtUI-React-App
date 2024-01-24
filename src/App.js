@@ -12,7 +12,6 @@ import FruitsTable from '@tw/examples/SimpleTable'
 
 function App() {
   const [isOpen, setOpen] = useState(false);
-  const [openLeftSideBar, setToOpenLeftSideBar] = useState(false);
 
   return (
     <>
@@ -20,13 +19,9 @@ function App() {
         {isOpen && <Modal onSubmit={() => setOpen(false)} />}
         <div className="flex h-screen bg-green-300">
           <div className="flex-1 flex flex-col overflow-hidden">
-            <SampleAppHeader onHamburgerClick={() => {
-              setToOpenLeftSideBar(true);
-            }} />
+            <SampleAppHeader />
             <div className="flex h-full">
-              <LeftSideBar openDrawer={openLeftSideBar} onBlurEvent={() => {
-                setToOpenLeftSideBar(false)
-              }}>
+              <LeftSideBar>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Home</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">About</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Services</a>
