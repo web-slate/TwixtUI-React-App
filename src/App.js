@@ -8,7 +8,7 @@ import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import TwixSwitch from '@tw/examples/Switch'
 import TwixtTextArea from '@tw/examples/TextArea'
-import TwixtSampleTable from '@tw/examples/SampleTable'
+import TwixtSimpleTable from '@tw/examples/SimpleTable'
 import CommentsSystem from '@tw/examples/CommentsSystem'
 import LoadingPostCard from '@tw/examples/LoadingPostCard'
 
@@ -35,7 +35,7 @@ function App() {
                   Open Modal
                 </button>
                 <TwixtTextArea />
-                <TwixtSampleTable />
+                <TwixtSimpleTable />
                 <LoadingPostCard />
                 <CommentsSystem />
               </ContentPane>
