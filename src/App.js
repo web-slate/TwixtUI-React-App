@@ -10,6 +10,7 @@ import TwixSwitch from '@tw/examples/Switch'
 import TwixtTextArea from '@tw/examples/TextArea'
 import TwixtSampleTable from '@tw/examples/SampleTable'
 import CommentsSystem from '@tw/examples/CommentsSystem'
+import LoadingPostCard from '@tw/examples/LoadingPostCard'
 
 import { LeftSideBar, RightSideBar, ContentPane } from '@tw/examples/Skeleton'
 
@@ -35,6 +36,7 @@ function App() {
                 </button>
                 <TwixtTextArea />
                 <TwixtSampleTable />
+                <LoadingPostCard />
                 <CommentsSystem />
               </ContentPane>
               <RightSideBar />
