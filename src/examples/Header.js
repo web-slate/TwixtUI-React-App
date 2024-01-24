@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { TwixtHeader, TwixtToolName } from 'TwixtUI/react'
 
 export default function Header() {
