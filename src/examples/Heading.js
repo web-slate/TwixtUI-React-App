@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ToolName } from 'TwixtUI/react'
+import { TwixtToolName } from 'TwixtUI/react'
 
 function TwixtHeader({ children }) {
     const headingContainerStyle = {
@@ -46,7 +46,7 @@ function TwixtHeader({ children }) {
 export default function Header() {
   return (
     <TwixtHeader>
-      <ToolName name="Twixt UI React App" />
+      <TwixtToolName name="Twixt UI React App" />
     </TwixtHeader>
   );
 }
