@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { TwixtButton, TwixtTextArea } from 'TwixtUI/react';
+import { TwixtButton, TwixtMultiLineInput } from 'TwixtUI/react';
 
 // Components.
 import { ErrorHandler } from '@tw/components'
@@ -36,7 +36,7 @@ function App() {
                 <TwixtButton onClick={() => setOpen(true)}>
                   Open Modal
                 </TwixtButton>
-                <TwixtTextArea />
+                <TwixtMultiLineInput />
                 <TwixtSimpleTable />
                 <CommentsSystem />
               </ContentPane>
