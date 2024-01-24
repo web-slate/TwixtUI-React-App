@@ -23,10 +23,10 @@ function App() {
         <div className="flex h-screen bg-green-300">
           <div className="flex-1 flex flex-col overflow-hidden">
             <Header />
-            <Heading />
             <div className="flex h-full">
               <LeftSideBar />
               <ContentPane>
+              <Heading />
                 <TwixSwitch />
                 <UserNameInput />
                 {/* Open modal button */}
