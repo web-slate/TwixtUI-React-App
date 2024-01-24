@@ -8,7 +8,6 @@ const fieldConfig = {
     { fieldId: 'category', rowStyle: 'pl-24', cellStyle: 'flex items-center pl-5', textStyle: 'text-sm leading-none text-gray-600 ml-2' },
     { fieldId: 'dueDate', rowStyle: 'pl-5', cellStyle: 'flex items-center', textStyle: 'text-sm leading-none text-gray-600 ml-2' },
     { fieldId: 'status', rowStyle: 'pl-5', cellStyle: 'flex items-center', textStyle: '' },
-    // { fieldId: '_view', rowStyle: 'pl-4', cellStyle: 'flex items-center', textStyle: '' },
   ],
   viewLabel: 'View',
   addLabel: 'Add',
