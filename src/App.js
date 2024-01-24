@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { TwixtButton } from 'TwixtUI/react';
+
 // Components.
 import { ErrorHandler } from '@tw/components'
 import UserNameInput from '@tw/examples/UserNameInput'
@@ -27,13 +29,13 @@ function App() {
             <div className="flex h-full">
               <LeftSideBar />
               <ContentPane>
-              <Heading />
+                <Heading />
                 <TwixSwitch />
                 <UserNameInput />
                 {/* Open modal button */}
-                <button onClick={() => setOpen(true)} className="px-4 py-2 bg-indigo-500 text-white rounded-md">
+                <TwixtButton onClick={() => setOpen(true)}>
                   Open Modal
-                </button>
+                </TwixtButton>
                 <TwixtTextArea />
                 <TwixtSimpleTable />
                 <LoadingPostCard />
