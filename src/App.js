@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { TwixtButton, TwixtMultiLineInput, TwixtSkeleton } from 'TwixtUI/react';
-import { LeftSideBar, RightSideBar, ContentPane } from '@tw/react/TwixtSkeleton';
+const { LeftSideBar, RightSideBar, ContentPane } = TwixtSkeleton;
 
 // Components.
 import { ErrorHandler } from '@tw/components'
