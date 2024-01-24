@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import { ToolName } from 'TwixtUI/react'
 
 function TwixtHeader({ children }) {
-
-  
-
     const headingContainerStyle = {
       display: 'flex',
       flexDirection: 'column',
