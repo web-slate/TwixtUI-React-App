@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { TwixtButton } from 'TwixtUI/react';
+import { TwixtButton, TwixtTextArea } from 'TwixtUI/react';
 
 // Components.
 import { ErrorHandler } from '@tw/components'
@@ -9,7 +9,6 @@ import Header from '@tw/examples/Header'
 import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import TwixSwitch from '@tw/examples/Switch'
-import TwixtTextArea from '@tw/examples/TextArea'
 import TwixtSimpleTable from '@tw/examples/SimpleTable'
 import CommentsSystem from '@tw/examples/CommentsSystem'
 import LoadingPostCard from '@tw/examples/LoadingPostCard'
