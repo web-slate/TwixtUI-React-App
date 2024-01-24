@@ -12,6 +12,7 @@ import FruitsTable from '@tw/examples/SimpleTable'
 
 function App() {
   const [isOpen, setOpen] = useState(false);
+  const [openLeftSideBar, setToOpenLeftSideBar] = useState(false);
 
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
           <div className="flex-1 flex flex-col overflow-hidden">
             <SampleAppHeader />
             <div className="flex h-full">
-              <LeftSideBar>
+              <LeftSideBar openDrawer={openLeftSideBar}>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Home</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">About</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Services</a>
