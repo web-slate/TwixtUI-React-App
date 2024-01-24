@@ -28,7 +28,7 @@ const fieldData = [
 
 const SimpleTable = () => {
   return (
-    <p>simpi</p>
+    <TwixtSimpleTable config={fieldConfig} data={fieldData} />
   );
 }
 
