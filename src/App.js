@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-import { TwixtButton, TwixtMultiLineInput } from 'TwixtUI/react';
+import { TwixtButton, TwixtMultiLineInput, TwixtSkeleton } from 'TwixtUI/react';
+import { LeftSideBar, RightSideBar, ContentPane } from '@tw/react/TwixtSkeleton';
 
 // Components.
 import { ErrorHandler } from '@tw/components'
@@ -12,8 +13,6 @@ import TwixSwitch from '@tw/examples/Switch'
 import TwixtSimpleTable from '@tw/examples/SimpleTable'
 import CommentsSystem from '@tw/examples/CommentsSystem'
 import LoadingPostCard from '@tw/examples/LoadingPostCard'
-
-import { LeftSideBar, RightSideBar, ContentPane } from '@tw/examples/Skeleton'
 
 function App() {
   const [isOpen, setOpen] = useState(false);
