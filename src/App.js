@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-import { TwixtButton, TwixtMultiLineInput, TwixtSkeleton } from 'TwixtUI/react';
-const { LeftSideBar, RightSideBar, ContentPane } = TwixtSkeleton;
+import { TwixtButton, TwixtMultiLineInput, TwixtSwitch, LeftSideBar, RightSideBar, ContentPane } from 'TwixtUI/react';
 
 // Components.
 import { ErrorHandler } from '@tw/components'
@@ -9,7 +8,6 @@ import UserNameInput from '@tw/examples/UserNameInput'
 import Header from '@tw/examples/Header'
 import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
-import TwixSwitch from '@tw/examples/Switch'
 import TwixtSimpleTable from '@tw/examples/SimpleTable'
 import CommentsSystem from '@tw/examples/CommentsSystem'
 import LoadingPostCard from '@tw/examples/LoadingPostCard'
@@ -29,9 +27,10 @@ function App() {
               <ContentPane>
               <LoadingPostCard />
                 <Heading />
-                <TwixSwitch />
+                <TwixtSwitch label="Toggle" onChange={status => {
+                  console.log('status: ', status)
+                }} />
                 <UserNameInput />
-                {/* Open modal button */}
                 <TwixtButton onClick={() => setOpen(true)}>
                   Open Modal
                 </TwixtButton>
