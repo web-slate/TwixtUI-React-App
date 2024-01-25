@@ -3,10 +3,9 @@ import { TwixtModal, TwixtButton } from 'TwixtUI/react'
 
 export default function Modal({ onSubmit = () => { } }) {
   return (
-    <TwixtModal title="Modal Title-E"
+    <TwixtModal title="Modal Title"
       footer={(
         <TwixtButton onClick={() => {
-          console.log('accept clicked')
           onSubmit();
         }} >
           Accept
