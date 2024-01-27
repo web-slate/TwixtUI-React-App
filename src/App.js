@@ -9,6 +9,8 @@ import SampleAppHeader from '@tw/examples/Header'
 import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import FruitsTable from '@tw/examples/SimpleTable'
+import UserCard from '@tw/examples/UserCard'
+import PageProgressLine from '@tw/examples/PageProgressLine'
 
 function App() {
   const [openModal, setToOpenModal] = useState(false);
@@ -32,9 +34,11 @@ function App() {
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Services</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Contact</a>
               </LeftSideBar>
-              <ContentPane>
-                <TwixtLoadingPostCard />
+              <ContentPane>                
+              <PageProgressLine />
+                <UserCard name="Shankar Ganesh" />
                 <Heading />
+                <TwixtLoadingPostCard />
                 <TwixtSwitch label="Toggle" onChange={status => {
                   console.log('status: ', status)
                 }} />
