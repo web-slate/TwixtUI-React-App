@@ -11,17 +11,22 @@ import Modal from '@tw/examples/Modal'
 import FruitsTable from '@tw/examples/SimpleTable'
 
 function App() {
-  const [isOpen, setOpen] = useState(false);
+  const [openModal, setToOpenModal] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const onHamburgerClick = () =>{
+    setOpenDrawer(!openDrawer);
+  }
 
   return (
     <>
       <ErrorHandler>
-        {isOpen && <Modal onSubmit={() => setOpen(false)} />}
+        {openModal && <Modal onSubmit={() => setToOpenModal(false)} />}
         <div className="flex h-screen bg-green-300">
           <div className="flex-1 flex flex-col overflow-hidden">
-            <SampleAppHeader />
+            <SampleAppHeader onHamburgerClick={onHamburgerClick} />
             <div className="flex h-full">
-              <LeftSideBar>
+              <LeftSideBar openDrawer={openDrawer}>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Home</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">About</a>
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Services</a>
@@ -34,7 +39,7 @@ function App() {
                   console.log('status: ', status)
                 }} />
                 <UserNameInput />
-                <TwixtButton onClick={() => setOpen(true)}>
+                <TwixtButton onClick={() => setToOpenModal(true)}>
                   Open Modal
                 </TwixtButton>
                 <TwixtMultiLineInput />
