@@ -8,7 +8,7 @@ export default function Header({ onHamburgerClick }) {
   };
 
   return (
-    <TwixtHeader announcment={announceMent} headerClass="bg-blue-300" rightBlock={(
+    <TwixtHeader announceMent={announceMent} headerClass="bg-blue-300" rightBlock={(
       <>Right</>
     )} onHamburgerClick={onHamburgerClick}>
       <TwixtToolName name="Twixt UI React App" />
