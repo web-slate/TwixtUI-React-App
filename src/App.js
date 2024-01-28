@@ -13,6 +13,8 @@ import {
   TwixtDialog,
   TwixtStats,
   TwixtPageProgressLine,
+  TwixtUserStackList,
+  TwixtPostItemList
 } from 'TwixtUI/react';
 
 // Components.
@@ -22,7 +24,7 @@ import SampleAppHeader from '@tw/examples/Header'
 import Heading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import FruitsTable from '@tw/examples/SimpleTable'
-import { usersCardList, statItems} from '@tw/examples/data';
+import { usersCardList, statItems, userStackList, postItemList } from '@tw/examples/data';
 
 function App() {
   const [openModal, setToOpenModal] = useState(false);
@@ -66,14 +68,9 @@ function App() {
                 <a href="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">Contact</a>
               </LeftSideBar>
               <ContentPane>
-                {/* <div class="flex -space-x-2 overflow-hidden">
-                  <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                  <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                  <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="" />
-                  <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                </div> */}
-
                 <TwixtPageProgressLine />
+                <TwixtPostItemList items={postItemList} />
+                <TwixtUserStackList items={userStackList} />
                 <div class="grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
                   {usersCardList.map(detail => {
                     return (
