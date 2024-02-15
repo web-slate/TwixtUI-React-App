@@ -14,7 +14,8 @@ import {
   TwixtStats,
   TwixtPageProgressLine,
   TwixtUserStackList,
-  TwixtPostItemList
+  TwixtPostItemList,
+  TwixtSimpleCodeEditor
 } from 'TwixtUI/react';
 
 // Components.
@@ -96,6 +97,7 @@ function App() {
                 <FruitsTable />
                 <TwixtCommentsSystem />
                 <TwixtStats items={statItems} />
+                <TwixtSimpleCodeEditor height="300px"/>
                 <div className="flex w-full max-w-xl h-60 items-center justify-center mx-auto bg-green-400 border-b border-gray-600">Post</div>
               </ContentPane>
               <RightSideBar>Rightbar</RightSideBar>
