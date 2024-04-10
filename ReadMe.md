@@ -1,9 +1,9 @@
 # Twixt React App Example
 
-## Run the App
+## Install Node Modules
 
 ```
-npm run dev
+npm install
 ```
 
 ## Build
@@ -22,4 +22,10 @@ npm run init-ui
 
 ```
 npm run ui
+```
+
+## Run the App
+
+```
+npm run dev
 ```
