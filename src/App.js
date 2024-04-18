@@ -82,7 +82,6 @@ function App() {
                   })}
                 </div>
 
-
                 <TwixtLoadingPostCard />
                 <TwixtSwitch label="Toggle" onChange={status => {
                   console.log('status: ', status)
