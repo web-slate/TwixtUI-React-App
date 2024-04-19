@@ -1,5 +1,5 @@
 import React from 'react'
-import { TwixtHeading } from 'TwixtUI/react'
+import { TwixtHeading } from 'twixt-ui-react'
 
 export default function Heading() {
   const headingContainerStyle = {
