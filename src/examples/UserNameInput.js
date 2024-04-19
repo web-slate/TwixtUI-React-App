@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TwixtSingleLineInput } from 'TwixtUI/react'
+import { TwixtSingleLineInput } from 'twixt-ui-react'
 
 function UserNameInput() {
   const [value, setValue] = useState('');
@@ -19,7 +19,7 @@ function UserNameInput() {
         value={value}
         onChange={handleChange}
         onBlur={handleBlur}
-        error={value === '' ? 'Field cannot be empty' : ''}
+        error={value === '' ? 'Username not available' : ''}
         warning={value.length > 0 && value.length < 5 ? 'Text is too short' : ''}
       />
     </>
