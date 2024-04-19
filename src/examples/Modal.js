@@ -1,5 +1,5 @@
 import React from 'react'
-import { TwixtModal, TwixtButton } from 'TwixtUI/react'
+import { TwixtModal, TwixtButton } from 'twixt-ui-react'
 
 export default function Modal({ onSubmit = () => { } }) {
   return (
