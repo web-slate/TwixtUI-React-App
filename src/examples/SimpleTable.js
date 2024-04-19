@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleTable as TwixtSimpleTable } from 'TwixtUI/react'
+import { SimpleTable as TwixtSimpleTable } from 'twixt-ui-react'
 
 const fieldConfig = {
   uniqueFieldId: 'id',
