@@ -8,13 +8,7 @@
     "build": "webpack --mode production --progress",
     "clean": "rm -rf node_modules",
     "predeploy": "npm run build",
-    "deploy": "npm run predeploy && gh-pages -d public",
-    "init-ui": "git submodule add --force https://github.com/web-slate/TwixtUI.git src/TwixtUI",
-    "clear-ui": "rm -rf src/TwixtUI || true && rm -f .gitmodules || true",
-    "clear-cache-ui": "git rm --cached src/TwixtUI -f || true && rm -rf .git/modules/TwixtUI || true",
-    "commit-clear": "git add . && git commit -am \"tech(ui): remove TwixtUI submodule\" && git push origin main",
-    "ui": "npm run clear-ui && npm run clear-cache-ui && npm run commit-clear && npm run init-ui",
-    "update-ui": "git submodule update --remote --merge && git add src/TwixtUI && git commit -m \"ui: update submodule\" && git push origin main"
+    "deploy": "npm run predeploy && gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "twixt-ui-react": "^0.2.10"
+
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

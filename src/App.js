@@ -22,7 +22,7 @@ import {
 import { ErrorHandler } from '@tw/components'
 import UserNameInput from '@tw/examples/UserNameInput'
 import SampleAppHeader from '@tw/examples/Header'
-import Heading from '@tw/examples/Heading'
+import SampleHeading from '@tw/examples/Heading'
 import Modal from '@tw/examples/Modal'
 import FruitsTable from '@tw/examples/SimpleTable'
 import { usersCardList, statItems, userStackList, postItemList } from '@tw/examples/data';
@@ -70,6 +70,7 @@ function App() {
               </LeftSideBar>
               <ContentPane>
                 <TwixtPageProgressLine />
+                <SampleHeading />
                 <TwixtPostItemList items={postItemList} />
                 <TwixtUserStackList items={userStackList} />
                 <div class="grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
@@ -81,7 +82,6 @@ function App() {
                   })}
                 </div>
 
-                <Heading />
                 <TwixtLoadingPostCard />
                 <TwixtSwitch label="Toggle" onChange={status => {
                   console.log('status: ', status)
