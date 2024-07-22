@@ -23,7 +23,8 @@
     "@uiw/react-codemirror": "^4.21.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "twixt-ui-react": "^0.2.10"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

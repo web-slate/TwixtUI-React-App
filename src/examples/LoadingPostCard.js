@@ -1,5 +1,5 @@
 import React from 'react';
-import { TwixtLoadingPostCard } from 'TwixtUI/react'
+import { TwixtLoadingPostCard } from 'twixt-ui-react'
 
 function LoadingPostCard() {
   return (

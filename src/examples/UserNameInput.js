@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TwixtSingleLineInput } from 'TwixtUI/react'
+import { TwixtSingleLineInput } from 'twixt-ui-react'
 
 function UserNameInput() {
   const [value, setValue] = useState('');

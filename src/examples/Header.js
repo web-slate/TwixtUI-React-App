@@ -1,5 +1,5 @@
 import React from 'react'
-import { TwixtHeader, TwixtToolName } from 'TwixtUI/react'
+import { TwixtHeader, TwixtToolName } from 'twixt-ui-react'
 
 export default function Header({ onHamburgerClick }) {
   const announceMent = {

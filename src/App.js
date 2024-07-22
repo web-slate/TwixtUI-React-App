@@ -16,7 +16,7 @@ import {
   TwixtUserStackList,
   TwixtPostItemList,
   TwixtSimpleCodeEditor
-} from 'TwixtUI/react';
+} from 'twixt-ui-react';
 
 // Components.
 import { ErrorHandler } from '@tw/components'
