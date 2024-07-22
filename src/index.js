@@ -1,6 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client';
-import 'twixt-ui-react/dist/tailwind.css';
+//import './TwixtUI/react/dist/tailwind.css'
+
 
 import App from './App'
 
