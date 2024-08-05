@@ -63,7 +63,7 @@ module.exports = {
       patterns: [
         { from: "./src/static/images", to: "images" },
         { from: "./src/static/style.css", to: "style.css" },
-        { from: "./src/static/tailwind.min.css", to: "tailwind.min.css" },
+        // { from: "./src/static/tailwind.min.css", to: "tailwind.min.css" },
       ],
     }),
   ],

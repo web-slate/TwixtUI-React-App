@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import 'twixt-ui-react/dist/tailwind.css';
 
 import {
   TwixtCommentsSystem,
@@ -71,6 +72,9 @@ function App() {
               <ContentPane>
                 <TwixtPageProgressLine />
                 <SampleHeading />
+                <TwixtSwitch label="Toggle" onChange={status => {
+                  console.log('status: ', status)
+                }} />
                 <TwixtPostItemList items={postItemList} />
                 <TwixtUserStackList items={userStackList} />
                 <div class="grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
@@ -83,9 +87,7 @@ function App() {
                 </div>
 
                 <TwixtLoadingPostCard />
-                <TwixtSwitch label="Toggle" onChange={status => {
-                  console.log('status: ', status)
-                }} />
+
                 <UserNameInput />
                 <TwixtButton onClick={() => setToShowDialog(true)}>
                   Open Dialog
@@ -97,7 +99,7 @@ function App() {
                 <FruitsTable />
                 <TwixtCommentsSystem />
                 <TwixtStats items={statItems} />
-                <TwixtSimpleCodeEditor height="300px"/>
+                <TwixtSimpleCodeEditor height="300px" />
                 <div className="flex w-full max-w-xl h-60 items-center justify-center mx-auto bg-green-400 border-b border-gray-600">Post</div>
               </ContentPane>
               <RightSideBar>Rightbar</RightSideBar>
